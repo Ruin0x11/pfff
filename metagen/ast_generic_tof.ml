@@ -258,7 +258,6 @@ and tof_stmt =
   OCaml.add_new_type "stmt"
     (OCaml.Sum
        [ ("ExprStmt", [ OCaml.Var "expr" ]);
-         ("LocalDef", [ OCaml.Var "definition" ]);
          ("LocalDirective", [ OCaml.Var "directive" ]);
          ("Block", [ OCaml.List (OCaml.Var "stmt") ]);
          ("If", [ OCaml.Var "expr"; OCaml.Var "stmt"; OCaml.Var "stmt" ]);
